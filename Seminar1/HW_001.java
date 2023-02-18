@@ -7,6 +7,8 @@ public class HW_001 {
         System.out.println(isPositive(0));
 
         System.out.println(isLeapYear(2020));
+
+        printString("abcd", 5);
     }
 
     // Написать метод, принимающий на вход два целых числа и проверяющий, что их
@@ -31,10 +33,19 @@ public class HW_001 {
     // проверить, является ли год високосным. если да - return true
 
     private static boolean isLeapYear(int year) {
-        if (!(year % 4 == 0)) 
+        if (!(year % 4 == 0))
             return false;
         else
             return true;
+    }
+
+    // напечатать строку source repeat раз
+
+    private static void printString(String source, int repeat) {
+        String s = ("abcd");
+        for (int i = 0; i < 5; i++) {
+            System.out.println(s);
+        }
     }
 
 }
